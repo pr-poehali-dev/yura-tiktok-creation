@@ -99,3 +99,21 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .tiktok-sidebar-icon {
+    @apply flex items-center justify-center p-3 hover:text-tiktok hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors;
+  }
+  
+  .tiktok-button {
+    @apply rounded-full bg-tiktok text-white font-medium hover:bg-opacity-90 transition-colors;
+  }
+  
+  .tiktok-video-container {
+    @apply snap-y snap-mandatory overflow-y-scroll h-screen;
+  }
+  
+  .tiktok-video {
+    @apply snap-start flex flex-col items-center justify-center h-screen w-full relative;
+  }
+}
